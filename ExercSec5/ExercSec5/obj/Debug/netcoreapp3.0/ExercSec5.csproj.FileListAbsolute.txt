@@ -1,0 +1,11 @@
+C:\Users\Daniel\source\repos\ExercSec5\ExercSec5\obj\Debug\netcoreapp3.0\ExercSec5.csprojAssemblyReference.cache
+C:\Users\Daniel\source\repos\ExercSec5\ExercSec5\obj\Debug\netcoreapp3.0\ExercSec5.AssemblyInfoInputs.cache
+C:\Users\Daniel\source\repos\ExercSec5\ExercSec5\obj\Debug\netcoreapp3.0\ExercSec5.AssemblyInfo.cs
+C:\Users\Daniel\source\repos\ExercSec5\ExercSec5\bin\Debug\netcoreapp3.0\ExercSec5.exe
+C:\Users\Daniel\source\repos\ExercSec5\ExercSec5\bin\Debug\netcoreapp3.0\ExercSec5.deps.json
+C:\Users\Daniel\source\repos\ExercSec5\ExercSec5\bin\Debug\netcoreapp3.0\ExercSec5.runtimeconfig.json
+C:\Users\Daniel\source\repos\ExercSec5\ExercSec5\bin\Debug\netcoreapp3.0\ExercSec5.runtimeconfig.dev.json
+C:\Users\Daniel\source\repos\ExercSec5\ExercSec5\bin\Debug\netcoreapp3.0\ExercSec5.dll
+C:\Users\Daniel\source\repos\ExercSec5\ExercSec5\bin\Debug\netcoreapp3.0\ExercSec5.pdb
+C:\Users\Daniel\source\repos\ExercSec5\ExercSec5\obj\Debug\netcoreapp3.0\ExercSec5.dll
+C:\Users\Daniel\source\repos\ExercSec5\ExercSec5\obj\Debug\netcoreapp3.0\ExercSec5.pdb
