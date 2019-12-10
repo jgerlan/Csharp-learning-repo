@@ -43,5 +43,22 @@ namespace ExercSec09_122.Entities
             }
             return total;
         }
+
+        public override string ToString()
+        {
+            StringBuilder sbString = new StringBuilder();
+            sbString.AppendLine("ORDER SUMMARY");
+            sbString.AppendLine("Order moment");
+            sbString.Append(status);
+            sbString.AppendLine("Client: ");
+            sbString.Append(client);
+            sbString.AppendLine("Order items");
+            foreach (OrderItem item in items)
+            {
+                sbString.AppendLine(item.prodct.name);
+            }
+            sbString.AppendLine();
+            return base.ToString();
+        }
     }
 }
