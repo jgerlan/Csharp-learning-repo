@@ -15,6 +15,13 @@ namespace ExercSec09_122.Entities
 
         }
 
+        public OrderItem(int quantity, double price, Product prodct)
+        {
+            this.quantity = quantity;
+            this.price = price;
+            this.prodct = prodct;
+        }
+
         public double subTotal()
         {
             return quantity * price;
