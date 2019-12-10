@@ -23,7 +23,7 @@ namespace ExercSec09_122.Entities
 
         public override string ToString()
         {
-            return name+" ("+dateBirth+") - "+email;
+            return name+" ("+dateBirth.ToString("dd/MM/yyyy")+") - "+email;
         }
 
     }

@@ -1,6 +1,7 @@
 ﻿using System;
 using ExercSec09_122.Entities.Enums;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace ExercSec09_122.Entities
@@ -47,18 +48,32 @@ namespace ExercSec09_122.Entities
         public override string ToString()
         {
             StringBuilder sbString = new StringBuilder();
-            sbString.AppendLine("ORDER SUMMARY");
-            sbString.AppendLine("Order moment");
-            sbString.Append(status);
-            sbString.AppendLine("Client: ");
+            sbString.AppendLine("\nORDER SUMMARY");
+            sbString.Append("Order moment: ");
+            sbString.Append(moment.ToString("dd/MM/yyyy HH:mm:ss"));
+            sbString.AppendLine();
+            sbString.Append("Order Status: ");
+            sbString.Append(status.ToString());
+            sbString.AppendLine();
+            sbString.Append("Client: ");
             sbString.Append(client);
-            sbString.AppendLine("Order items");
+            sbString.AppendLine();
+            sbString.Append("Order items: ");
             foreach (OrderItem item in items)
             {
-                sbString.AppendLine(item.prodct.name);
+                sbString.AppendLine();
+                sbString.Append(item.prodct.name+", ");
+                sbString.Append("$"+item.price.ToString("F2", CultureInfo.InvariantCulture) + ", ");
+                sbString.Append("Quantity: ");
+                sbString.Append(item.quantity+", ");
+                sbString.Append("Substotal: ");
+                sbString.Append("$"+item.subTotal().ToString("F2", CultureInfo.InvariantCulture));
             }
             sbString.AppendLine();
-            return base.ToString();
+            sbString.Append("Total price: ");
+            double tl = this.total();
+            sbString.Append("$"+tl.ToString("F2", CultureInfo.InvariantCulture));
+            return sbString.ToString();
         }
     }
 }
