@@ -17,17 +17,16 @@ namespace ExercSec09_122
             OrderStatus status;
                         
             Console.WriteLine("Enter cliente data: ");
-            Console.WriteLine("Name:");
             Console.Write("Name: ");
             name = Console.ReadLine();
-            Console.Write("Email: )");
+            Console.Write("Email: ");
             email = Console.ReadLine();
             Console.Write("Birth Date (DD/MM/YYYY): ");
             dateBirth = DateTime.Parse(Console.ReadLine());
 
             Client client = new Client(name, email, dateBirth); 
             
-            Console.Write("Enter order data: ");
+            Console.WriteLine("Enter order data: ");
             nowTime.ToString("DD/MM/YYYY HH:mm:ss");
             Console.Write("Status: ");
             status = Enum.Parse<OrderStatus>(Console.ReadLine());
@@ -43,18 +42,17 @@ namespace ExercSec09_122
                 string nameItem = Console.ReadLine();
                 Console.Write("Product price: ");
                 double itemPrice = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                Console.WriteLine("Quantity: ");
+                Console.Write("Quantity: ");
                 int qtdItem = int.Parse(Console.ReadLine());
 
                 Product product = new Product(nameItem, itemPrice);
                 OrderItem orderItem = new OrderItem(qtdItem, itemPrice, product);
 
                 order.addItem(orderItem);
-                // order.addItem();
-
+                
             }
-
-            
+            Console.WriteLine(order);
+                        
         }
     }
 }

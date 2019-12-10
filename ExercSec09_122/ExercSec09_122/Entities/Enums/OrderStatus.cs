@@ -5,10 +5,10 @@ namespace ExercSec09_122.Entities.Enums
 {
     enum OrderStatus : int
     {
-        pendingPayment = 0,
-        processing = 1,
-        shipped = 2,
-        delivered = 3
+        PendingPayment = 0,
+        Processing = 1,
+        Shipped = 2,
+        Delivered = 3
 
     }
 }
