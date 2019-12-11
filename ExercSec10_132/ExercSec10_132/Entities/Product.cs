@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace ExercSec06_132.Entities
@@ -19,10 +20,12 @@ namespace ExercSec06_132.Entities
             this.price = price;
         }
 
-        public string pricetag()
+        public virtual string priceTag()
         {
-
-            return "";
+            StringBuilder sbString = new StringBuilder();
+            sbString.AppendLine(name + " ");
+            sbString.AppendLine("$ "+price.ToString("F2", CultureInfo.InvariantCulture));
+            return sbString.ToString() ;
         }
     }
 }
