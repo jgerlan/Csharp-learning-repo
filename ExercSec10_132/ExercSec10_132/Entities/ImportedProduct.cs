@@ -17,13 +17,15 @@ namespace ExercSec06_132.Entities
             : base(name, price)
         {
             this.customsFee = customsFee;
+            //this.price = this.totalPrice();
         }
 
         public override string priceTag()
         {
             StringBuilder sbString = new StringBuilder();
             sbString.Append(name+" ");
-            sbString.Append("$ "+price.ToString("F2", CultureInfo.InvariantCulture) + " ");
+            //sbString.Append("$ "+price.ToString("F2", CultureInfo.InvariantCulture) + " ");
+            sbString.Append("$ " + this.totalPrice().ToString("F2", CultureInfo.InvariantCulture) + " ");
             sbString.Append("(Customs fee: $ " + customsFee.ToString("F2", CultureInfo.InvariantCulture)+")");
             return sbString.ToString();
         }

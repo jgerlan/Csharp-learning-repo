@@ -23,8 +23,8 @@ namespace ExercSec06_132.Entities
         public virtual string priceTag()
         {
             StringBuilder sbString = new StringBuilder();
-            sbString.AppendLine(name + " ");
-            sbString.AppendLine("$ "+price.ToString("F2", CultureInfo.InvariantCulture));
+            sbString.Append(name + " ");
+            sbString.Append("$ "+price.ToString("F2", CultureInfo.InvariantCulture));
             return sbString.ToString() ;
         }
     }
