@@ -6,7 +6,14 @@ namespace ExercSec10_136
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.Write("Enter the number of tax payers: ");
+            int taxPayers = 0;
+
+            for (int count = 0; count < taxPayers; count++)
+            {
+
+            }
+            Console.WriteLine("Tax payer #{}");
         }
     }
 }
