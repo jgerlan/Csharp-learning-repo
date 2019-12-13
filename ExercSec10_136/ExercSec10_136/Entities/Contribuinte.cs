@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace ExercSec10_136.Entities
 {
     abstract class Contribuinte

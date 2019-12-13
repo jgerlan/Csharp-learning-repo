@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Globalization;
 using System.Text;
 
 namespace ExercSec10_136.Entities
@@ -35,6 +34,14 @@ namespace ExercSec10_136.Entities
             }
 
             return imposto;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sbString = new StringBuilder();
+            sbString.Append(nome+": ");
+            sbString.Append("$ "+this.impostoPago().ToString("F2", CultureInfo.InvariantCulture));
+            return sbString.ToString();
         }
     }
 }
